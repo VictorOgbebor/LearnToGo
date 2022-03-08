@@ -1,4 +1,5 @@
 package main
+
 /*
 Review Docs: https://pkg.go.dev/fmt
 
@@ -8,11 +9,9 @@ Organized Code that is abele to be shared. When we import we will get the code t
 
 import "fmt"
 
-func main()  {
-	Println("hello", 25, true)
+func main() {
+	fmt.Println("hello", 25, true)
 
+	// println("Solution also works... no need to import node packages)")
 
-	println("Solution: fmt.Println()")
-	// fmt.Println()
-	
 }

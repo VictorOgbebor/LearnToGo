@@ -1,4 +1,5 @@
 package main
+
 /*
 	cannot have unused variables in your code
 
@@ -13,12 +14,11 @@ package main
 
 import "fmt"
 
-
 var p = 5 // This variable can everywhere
 
 var zero int // just Assigned the fact its a int type
 
-func main()  {
+func main() {
 	x := 50 // This Value can only be used in the function
 	fmt.Println(x, ": Is the inital value x")
 
@@ -36,13 +36,13 @@ func main()  {
 	proofItWorks()
 }
 
-func proofItWorks()  {
+func proofItWorks() {
 	fmt.Println(p, ": see it again")
 
 	fmt.Println(zero, ": and this is a zero value...if you dont Assign it something, its zero by default")
 }
 
-// Bsst tip is to limit the scope of the variable... If the variable has to be used alot make it global, 
+// Bsst tip is to limit the scope of the variable... If the variable has to be used alot make it global,
 // else keep variable to a function scope
 
 // Go Playground link:  https://go.dev/play/p/9odbSj_0Xf7
