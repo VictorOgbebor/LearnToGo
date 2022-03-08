@@ -8,7 +8,7 @@ var (
 )
 
 func main() {
-	var JavaScript, Python, Typescript, Go = "good", "good", "bad", "great"
+	var JavaScript, Python, Typescript, Go = "Dual-Threat", "6th-Man", "2-WayStar", "MVP"
 
 	// Short Declaration
 	Parky := "name"
