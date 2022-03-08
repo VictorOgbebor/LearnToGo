@@ -17,6 +17,7 @@ func main() {
 
 	fmt.Println(y)
 	printNumbers()
+	
 	fmt.Println("\t")
 	printStrings()
 

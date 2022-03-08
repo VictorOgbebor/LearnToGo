@@ -28,8 +28,8 @@ var numbers int = 25
 type Type1 int
 
 var int1 Type1
-
 type Type2 string
+
 
 var string1 Type2
 
