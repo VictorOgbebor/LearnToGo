@@ -10,8 +10,6 @@ from Previous Lesson
 		i. print out the value of the variable “x”
 		ii. print out the type of the variable “x”
 		iii. assign your own VALUE to the VARIABLE “x” using the “=” OPERATOR
-
-    
 		iv. print out the value of the variable “x” b. now do this
 			i. now use CONVERSION to convert the TYPE of the VALUE stored in “x” to the UNDERLYING TYPE
 				1. then use the “=” operator to ASSIGN that value to “y”
@@ -19,3 +17,6 @@ from Previous Lesson
 				3. print out the type of “y”
 
 */
+
+// Link to solution: https://go.dev/play/p/ugEc_fPmhU_g
+

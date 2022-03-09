@@ -41,7 +41,7 @@ func printStrings() {
 
 	fmt.Println(lol)
 
-	// FPrint is another one we will use for web server and files stuff
+	// FPrint is another one we will use for web server and files stuff || "variadic parameter" = means that the func can take as many values of that type as you want to pass in
 }
 
 // Go Playground link: https://go.dev/play/p/7bileHGdH-K

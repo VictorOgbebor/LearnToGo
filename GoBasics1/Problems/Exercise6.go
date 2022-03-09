@@ -1,5 +1,0 @@
-// Link to solution:
-
-/*
-
-*/
