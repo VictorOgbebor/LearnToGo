@@ -1,25 +1,18 @@
-
-
 /*
-	set up a standard go program that prints out your
-
+	set up a standard go program that prints out these values:
+(1)
 	name, yearBorn, true statement => (Remember the types)
 	create a local variable to pass this task.
 
-	print each variable and its type
-	print a statment using the Variables
+(2)
+	print each variable to get the stored value
+	print a statement using  all variables
 
-	4 prints int total
+	4 Total print Statements 
 
 	hint *You will need a short declaration for this*
+
 */
 
-// Link to solution:
-
-
-package main
-
-import (
-	"fmt"
-)
+// Link to solution: 
 
