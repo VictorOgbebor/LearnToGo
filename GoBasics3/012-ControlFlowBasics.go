@@ -1,8 +1,14 @@
 /*
 || https://go.dev/doc/effective_go#control-structures
+https://go.dev/ref/spec#Statements
+
 Control Flow allows = How the computer will read the code. Like a recipe. Like a play in a playbook. The steps to Success based on Conditions
 	Loops
 	Conditions
+
+	for i := 0; i > 10: i++ {
+
+	}
 
 	for i := "init or Initialize Variable using the short Declaration"; Condition statement = Some math or Boolean; post = the PostAction result {
 		print a statement or call a function
@@ -21,8 +27,9 @@ func main() {
 
 	//simpleLoop()
 	//nestedLoop()
-	//forStatement() // This will run forever
+	// forStatement() // This will run forever
 	breakContinue()
+	// printingStatement()
 	//conditionalsIF()
 	//conditionalsIF_ElSE()
 	//switchStatement()
@@ -57,52 +64,61 @@ func nestedLoop() {
 func forStatement() {
 	fmt.Println("For Statements in loops")
 
-	goodPrice := 6 //
-	buy := true
-
-	// simple
-
-	for goodPrice < 10 {
-
-		fmt.Println("assets = ", goodPrice)
-		fmt.Println(buy, "Good Buy")
-		goodPrice++
+	// simple for loop or While Statment
+	x := 1
+	for x < 10 {
+		fmt.Println(x)
+		x++
 	}
+	fmt.Println("done.")
+
+	// For Statement W
+	for {
+		if x > 9 {
+			break
+		}
+		fmt.Println(x)
+		x++
+	}
+	fmt.Println("done.")
 
 }
 
+//  for loop
 func breakContinue() {
 	fmt.Println("Break and Continue")
 
-	goodPrice := 1 //
-	buy := true
-
+	x := 0
 	for {
-
-		if goodPrice < 9 {
-			break
+		x++
+		if x > 100 {
+			break // Break when hit over 100
 		}
-		fmt.Println("assets = ", goodPrice)
-		fmt.Println(buy, "Good Buy")
-		goodPrice++
+
+		if x%2 != 0 {
+			continue // will continue if conditon is met
+		}
+
+		fmt.Println(x)
+		// math Remander in Go
+		x := 83 / 40
+		y := 83 % 40
+		fmt.Println(x, y)
 
 	}
+	fmt.Println("done.")
 
 }
 
-func conditionalsIF() {
-	fmt.Println("IF Statement")
-}
-func conditionalsIF_ElSE() {
-	fmt.Println("IF Else Statement")
-}
-
-func switchStatement() {
-	fmt.Println("Switch Statement")
-}
-
-func usingBoolOperators() {
-	fmt.Println("Bool Loops")
+func printingStatement() {
+	x := 33
+	for {
+		if x > 122 {
+			break
+		}
+		fmt.Printf("%v corresponds to %+q in ASCII\n", x, x)
+		x++
+	}
 }
 
 /*
