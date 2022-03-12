@@ -13,7 +13,7 @@ func main() {
 	// (4) Print using fmt
 	fmt.Println("Welcome to Writing in Go")
 
-	// (5.0) This function is call in bellow
+	// (5.0) This function is call in below
 	yo()
 
 	/*

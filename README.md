@@ -16,6 +16,8 @@ Writing in Go is like driving a BMW || Benz || Tesla => Consistent, Smooth, and 
 - https://go.dev/doc/code || 
 - https://goethereumbook.org/en/
 
+|| https://go.dev/doc/effective_go
+
 - https://go.dev/play/ || 
 - https://pkg.go.dev || 
 - https://gobyexample.com
