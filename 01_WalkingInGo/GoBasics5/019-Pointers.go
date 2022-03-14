@@ -8,6 +8,6 @@ func main() {
 	pointers()
 }
 
-func pointers()  {
-	
+func pointers() {
+
 }
