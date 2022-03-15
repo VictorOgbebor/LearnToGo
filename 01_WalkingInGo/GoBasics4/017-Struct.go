@@ -10,7 +10,7 @@ import (
 )
 
 type person struct {
-	first string
+	first string // Fields or Attributes
 	last  string
 	age   int
 }
@@ -21,9 +21,11 @@ type superStar struct {
 }
 
 func main() {
-	structs()
+	// structs()
 
-	EmbeddedStructs()
+	// EmbeddedStructs()
+
+	AnonymousStructs()
 }
 
 func structs() {
@@ -51,9 +53,10 @@ func structs() {
 
 func EmbeddedStructs() {
 
-	superStar := superStar{
+	superStar := superStar{ // Will inherit from oringnal typr
+
 		person: person{
-			first: "OG",
+			first: "OG", // This are promoted Fields
 			last:  "Parky",
 			age:   5,
 		},
@@ -62,4 +65,21 @@ func EmbeddedStructs() {
 
 	fmt.Println(superStar)
 	fmt.Println(superStar.first, superStar.last, superStar.age, superStar.MVP)
+}
+
+
+func AnonymousStructs() {
+
+	// Think of this like creating a local variable => This keeps code clean. Especially if you only need the struct for the Function Nothing else
+	OG := struct {
+		first string
+		last string
+		age int
+	}{
+		first: "First",
+		last: "Last",
+		age: 20,
+	}
+
+	fmt.Println(OG)
 }
