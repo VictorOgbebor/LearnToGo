@@ -10,17 +10,23 @@ import (
 )
 
 func main() {
+	sliceInt := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15}
 	variadicParms(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
 	sumOfParms(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15)
+
+	sumOfParms(sliceInt...) // The ... allows for the int => in the slice can be passed thru
+
+	sumOfParms() // Zero Value
 }
-// when we use (...) => allows us to use Unlimited amount of parms(enter unlimited args)
+
+// (1) when we use (...) => allows us to use Unlimited amount of parms(enter unlimited args)
 func variadicParms(z ...int) {
 	fmt.Println(z) // This will print int a slice
 	fmt.Printf("%T", z)
 
-
 }
 
+// (2)
 func sumOfParms(z ...int) int {
 	fmt.Println(z) // This will print int a slice
 	fmt.Printf("%T", z)
@@ -34,9 +40,5 @@ func sumOfParms(z ...int) int {
 	fmt.Println("The total is", sum)
 
 	return sum
-	
-}
 
-func sliceFunctions()  {
-	
 }
